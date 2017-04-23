@@ -1,3 +1,6 @@
-# hello, world
+# code & data coming soon
 
-starting up the github pages
+We've just finished the camera ready and are cleaning up the code and data. This
+page will have all of the links. Stay tuned!
+
+— Max, 4/22/17
