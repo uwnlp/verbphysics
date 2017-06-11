@@ -8,7 +8,7 @@ When predicting action frames, only 5% action frame data should be used. Either
 5% or 20% object pair data may be used to assist in action frame prediction.
 
 When predicting object pairs, only 5% object pair data should be used. Either
-5% or 20% action frame data may be used to assist in action frame prediction.
+5% or 20% action frame data may be used to assist in object pair prediction.
 
 # paper
 
