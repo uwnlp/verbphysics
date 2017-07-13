@@ -1,0 +1,7 @@
+factorgraph
+numpy
+pandas
+nltk
+tqdm
+myria-python
+tabulate
