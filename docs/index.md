@@ -40,6 +40,26 @@ to those object pairs. Empirical results demonstrate that it is possible to
 extract knowledge of actions and objects from language and that joint inference
 over different types of knowledge improves performance.
 
+# authors
+
+<div style="display: inline-block; padding: 10px; text-align: center">
+
+[![a picture of Maxwell Forbes](max_thumb.jpeg)](http://maxwellforbes.com/)
+
+[Maxwell Forbes](http://maxwellforbes.com/)
+
+</div>
+
+<div style="display: inline-block; padding: 10px; text-align: center">
+
+[![a picture of Yejin Choi](yejin_thumb.jpg)](https://homes.cs.washington.edu/~yejin/)
+
+[Yejin Choi](https://homes.cs.washington.edu/~yejin/)
+
+</div>
+
+Foo bar
+
 # paper
 
 The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
