@@ -5,18 +5,18 @@ tagline: Maxwell Fores & Yejin Choi — ACL 2017
 
 # about
 
-> Mary threw _____
-
-_whatever Mary threw (a ball? a rock?) is probably smaller and weighs less than
-her_
-
 The **Verb Physics** project explores how our choice of verbs tells us about the
 physical properties of the objects that we talk about.
 
-> Ricardo walked into _____
+> Mary threw _____.
 
-_whatever Ricardo walked into (the library? his office?) is probably larger than
-him_
+_Whatever Mary threw (a ball? a rock?) is probably smaller and weighs less than
+her_
+
+> Ricardo walked into _____.
+
+_Whatever Ricardo walked into (the library? his office?) is probably larger
+than him_
 
 # demo
 
@@ -40,15 +40,11 @@ to those object pairs. Empirical results demonstrate that it is possible to
 extract knowledge of actions and objects from language and that joint inference
 over different types of knowledge improves performance.
 
-# data
-
-The data is available in the GitHub repository under [`data/`](https://github.com/uwnlp/verbphysics/tree/master/data).
-
 # paper
 
 The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
 
-[![a thumbnail rendering of the ACL 2017 verbphysics paper][thumb-all-resized.png]](https://arxiv.org/abs/1706.03799)
+[![a thumbnail rendering of the ACL 2017 verbphysics paper](thumb-all-resized.png)](https://arxiv.org/abs/1706.03799)
 
 # bibtex
 
@@ -60,6 +56,11 @@ The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
   year = {2017}
 }
 ```
+
+# data
+
+The data is available in the GitHub repository under
+[`data/`](https://github.com/uwnlp/verbphysics/tree/master/data).
 
 # code
 
