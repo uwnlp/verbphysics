@@ -43,22 +43,18 @@ over different types of knowledge improves performance.
 # authors
 
 <div style="display: inline-block; padding: 10px; text-align: center">
-
-[![a picture of Maxwell Forbes](max_thumb.jpeg)](http://maxwellforbes.com/)
-
-[Maxwell Forbes](http://maxwellforbes.com/)
-
+  <a href="http://maxwellforbes.com/">
+    <img src="max_thumb.jpeg" alt="A picture of Maxwell Forbes" />
+  </a>
+  <p><a href="http://maxwellforbes.com/">Maxwell Forbes</a></p>
 </div>
 
 <div style="display: inline-block; padding: 10px; text-align: center">
-
-[![a picture of Yejin Choi](yejin_thumb.jpg)](https://homes.cs.washington.edu/~yejin/)
-
-[Yejin Choi](https://homes.cs.washington.edu/~yejin/)
-
+  <a href="https://homes.cs.washington.edu/~yejin/">
+    <img src="yejin_thumb.jpg" alt="A picture of Yejin Choi" />
+  </a>
+  <p><a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a></p>
 </div>
-
-Foo bar
 
 # paper
 
