@@ -4,7 +4,7 @@ python:
   - "2.7"
 install:
   - pip install -r requirements.txt
+  - pip install lib/ngramdb/  
   - ./scripts/data.sh
-  - pip install lib/ngramdb/
 script:
   - python -m src.main

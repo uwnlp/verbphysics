@@ -1,0 +1,16 @@
+# Generic python crap
+*.pyc
+
+# Data that should be retrieved when setting up repository.
+# See scripts/data.sh.
+data/ngramdb/
+data/glove/
+data/emb/
+
+# Every time the system is run it logs files and produces diagnostic output of
+# its decisions.
+log/
+output/
+
+# Visualization data gets dumped to this directory.
+viz/

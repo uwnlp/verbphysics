@@ -60,12 +60,12 @@ over different types of knowledge improves performance.
 
 The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
 
-[![a thumbnail rendering of the ACL 2017 verbphysics paper](thumb-all-resized.png)](https://arxiv.org/abs/1706.03799)
+[![a thumbnail rendering of the ACL 2017 verb physics paper](thumb-all-resized.png)](https://arxiv.org/abs/1706.03799)
 
 # bibtex
 
 ```
-@inproceedings{forbes2017verbphysics,
+@inproceedings{forbes2017verb,
   title = {Verb Physics: Relative Physical Knowledge of Actions and Objects},
   author = {Maxwell Forbes and Yejin Choi},
   booktitle = {ACL},
@@ -75,8 +75,11 @@ The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
 
 # data
 
-The data is available in the GitHub repository under
+The data is available in the `verbphysics` GitHub repository under
 [`data/`](https://github.com/uwnlp/verbphysics/tree/master/data).
+
+See the repository [README](https://github.com/uwnlp/verbphysics#data) for more
+information on the data splits and task setup.
 
 # code
 
@@ -85,3 +88,12 @@ repository](https://github.com/uwnlp/verbphysics) for our reference
 implementation and instructions for running our code.
 
 It is released under the permissive MIT license.
+
+## thanks
+
+- to [Hannah Rashkin](https://homes.cs.washington.edu/~hrashkin/) for
+  inspiration with her [connotation frames
+  visualizer](https://homes.cs.washington.edu/~hrashkin/connframe_vis.php)
+
+- to the [Stanford Vision Lab](http://vision.stanford.edu/) for inspiration
+  with good project webpage designs ([example](http://cs.stanford.edu/people/ranjaykrishna/im2p/index.html))

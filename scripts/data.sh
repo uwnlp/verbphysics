@@ -3,7 +3,7 @@
 #
 # verbphysics
 #
-# Data retrieval script. asdfdkfj
+# Data retrieval script.
 #
 # author: mbforbes
 #

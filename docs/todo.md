@@ -10,17 +10,16 @@
 - [ ] demo
 - [x] abstract
 - [x] paper vis -> link to paper
-- [ ] author pics + links
+- [x] author pics + links
 - [x] bibtex
-- [ ] data (instructions, download links)
-- [ ] code link / notice for detailed instructions
-- [ ] acknowledgements (incl stanford vision lab for project page inspiration)
-- [ ] data packaged (github release?)
+- [x] data (instructions, download links)
+- [x] code link / notice for detailed instructions
+- [x] acknowledgements (incl stanford vision lab for project page inspiration)
 
 ## readme
 - [x] link to github.io page
-- [ ] setup instructions
-    - [ ] data download
-    - [ ] code: setup
-    - [ ] code: run
-- [ ] docker setup
+- [x] setup instructions
+    - [x] data download
+    - [x] code: setup
+    - [x] code: run
+- [ ] viz picture
