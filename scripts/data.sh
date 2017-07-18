@@ -36,3 +36,6 @@ curl https://homes.cs.washington.edu/~mbforbes/verbphysics/emb-trained-weights.t
 tar -xzf emb-trained-weights.tar.gz
 rm emb-trained-weights.tar.gz
 cd ../..
+
+# Get wordnet data for NLTK
+python -m nltk.downloader wordnet
