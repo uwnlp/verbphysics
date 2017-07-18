@@ -1,12 +1,12 @@
 ---
 title: verbphysics
-tagline: Maxwell Fores & Yejin Choi — ACL 2017
+tagline: Maxwell Forbes & Yejin Choi — ACL 2017
 ---
 
-# about
+# About
 
-The **Verb Physics** project explores how our choice of verbs tells us about the
-physical properties of the objects that we talk about.
+The **Verb Physics** project explores how our choice of verbs entails relations
+between the physical properties of the objects we talk about.
 
 > Mary threw _____.
 
@@ -18,11 +18,11 @@ her_
 _Whatever Ricardo walked into (the library? his office?) is probably larger
 than him_
 
-# demo
+# Demo
 
 Coming soon — Max, 7/13/17
 
-# abstract
+# Abstract
 
 Learning commonsense knowledge from natural language text is nontrivial due to
 reporting bias: people rarely state the obvious, e.g., "My house is bigger than
@@ -40,7 +40,7 @@ to those object pairs. Empirical results demonstrate that it is possible to
 extract knowledge of actions and objects from language and that joint inference
 over different types of knowledge improves performance.
 
-# authors
+# Authors
 
 <div style="display: inline-block; padding: 10px; text-align: center">
   <a href="http://maxwellforbes.com/">
@@ -56,13 +56,13 @@ over different types of knowledge improves performance.
   <p><a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a></p>
 </div>
 
-# paper
+# Paper
 
 The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
 
 [![a thumbnail rendering of the ACL 2017 verb physics paper](thumb-all-resized.png)](https://arxiv.org/abs/1706.03799)
 
-# bibtex
+# Bibtex
 
 ```
 @inproceedings{forbes2017verb,
@@ -73,15 +73,15 @@ The paper is available on [arXiv](https://arxiv.org/abs/1706.03799).
 }
 ```
 
-# data
+# Data
 
-The data is available in the `verbphysics` GitHub repository under
-[`data/`](https://github.com/uwnlp/verbphysics/tree/master/data).
+The data is available in the [`verbphysics` GitHub repository under
+`data/`](https://github.com/uwnlp/verbphysics/tree/master/data).
 
 See the repository [README](https://github.com/uwnlp/verbphysics#data) for more
 information on the data splits and task setup.
 
-# code
+# Code
 
 Visit the [`verbphysics` GitHub
 repository](https://github.com/uwnlp/verbphysics) for our reference
@@ -89,7 +89,7 @@ implementation and instructions for running our code.
 
 It is released under the permissive MIT license.
 
-## thanks
+## Thanks
 
 - to [Hannah Rashkin](https://homes.cs.washington.edu/~hrashkin/) for
   inspiration with her [connotation frames

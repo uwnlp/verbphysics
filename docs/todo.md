@@ -17,9 +17,12 @@
 - [x] acknowledgements (incl stanford vision lab for project page inspiration)
 
 ## readme
+
+- [x] badges
+- [x] overview
 - [x] link to github.io page
-- [x] setup instructions
-    - [x] data download
-    - [x] code: setup
-    - [x] code: run
-- [ ] viz picture
+- [x] installation (code, aux data)
+- [x] running
+- [x] data
+- [x] viz (desc + picture)
+- [x] see also for py-factorgraph
