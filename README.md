@@ -1,5 +1,8 @@
 # verbphysics
 
+[![Build Status](https://travis-ci.org/uwnlp/verbphysics.svg?branch=master)](https://travis-ci.org/uwnlp/verbphysics)
+[![license MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uwnlp/verbphysics/blob/master/LICENSE.txt)
+
 ## About
 
 This repository contains the data and reference implementation for the paper
@@ -27,9 +30,10 @@ pip install lib/ngramdb/
 ./scripts/data.sh
 ```
 
-Note that our [Travis-CI
-script](https://github.com/uwnlp/verbphysics/blob/master/.travis.yml) runs the
-above installation instructions on a fresh machine for validation.
+Our [Travis-CI
+script](https://github.com/uwnlp/verbphysics/blob/master/.travis.yml) validates
+the above installation instructions by running them on a fresh machine after
+every code modification.
 
 ## Running
 
