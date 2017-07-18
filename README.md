@@ -1,6 +1,6 @@
 # verbphysics
 
-## about
+## About
 
 This repository contains the data and reference implementation for the paper
 
@@ -11,7 +11,7 @@ _ACL 2017_
 See the [Verb Physics project page](https://uwnlp.github.io/verbphysics/) for
 more details (model visualiation, paper link, bibtex citation).
 
-## installation
+## Installation
 
 The code is written in Python 2.7. We recommend a fresh virtualenv.
 
@@ -31,7 +31,7 @@ Note that our [Travis-CI
 script](https://github.com/uwnlp/verbphysics/blob/master/.travis.yml) runs the
 above installation instructions on a fresh machine for validation.
 
-## running
+## Running
 
 By default, the code is setup to run a particular model from the paper (**our
 model (A)**)
@@ -64,11 +64,11 @@ Settings (hyperparameter) configurations are found in `src/settings.py`. You
 can modify the `playing` dictionary found in `src/main.py` with your own
 configuration and run the custom model using `--config=playing`.
 
-## data
+## Data
 
 The `verbphysics` data is found under `data/verbphysics/`.
 
-**Task setup as in the ACL 2017 paper:**
+**Task setup as in the ACL 2017 paper**
 
 When predicting action frames, only 5% action frame data should be used. Either
 5% (our model A) or 20% object pair data (our model B) may be used to assist in
@@ -78,13 +78,18 @@ When predicting object pairs, only 5% object pair data should be used. Either 5%
 (our model A) or 20% action frame data (our model B) may be used to assist in
 object pair prediction.
 
-## visualization
+## Visualization
 
-See the [`factorgraph-viz`](https://github.com/mbforbes/factorgraph-viz)
-library for way to visualize the `verbphysics` model. You can generate the data
-to do by running with `--viz`.
+You can use [`factorgraph-viz`](https://github.com/mbforbes/factorgraph-viz) to
+visualize `verbphysics` factor graph models interactively in your web browser.
+To produce visualization data, add the command line argument `--viz`.
 
-## see also
+The [Verb Physics project page](https://uwnlp.github.io/verbphysics/) has a
+live demo of this running.
+
+![An example rendering of a factor graph using the factorgraph-viz library](factorgraph-viz.png)
+
+## See also
 
 The [`py-factorgraph`](https://github.com/mbforbes/py-factorgraph) library
 provides the underlying factor graph implementation.
