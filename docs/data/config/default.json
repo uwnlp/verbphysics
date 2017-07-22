@@ -1,5 +1,5 @@
 {
-    "data_dir": "data/examples/",
+    "data_dir": "https://cdn.rawgit.com/mbforbes/verbphysics-examples/f30d8eb1387208aaefff3c0b06f50a3cd8b20800/action-frames/",
     "data_filenames": "data/options/example-list.json",
     "size": {
         "rv": 8,
