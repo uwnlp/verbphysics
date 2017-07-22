@@ -1,0 +1,35 @@
+.links line {
+	/*stroke: #999;*/
+	stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+.facs rect {
+	stroke: #aaa;
+	stroke-width: 1px;
+}
+
+.rvtext {
+	font-size: 1em;
+}
+
+.factext {
+	font-size: 0.7em;
+}
+
+button.suggestion {	
+	background-color: lightgray;
+	margin: 5px;
+	padding: 5px;
+	border: none;
+	border-radius: 8px;
+}
+
+button.suggestion:hover {
+	background-color: lightslategray;
+	cursor: pointer;
+}

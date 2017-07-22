@@ -20,9 +20,14 @@ than him_
 
 # Demo
 
+[v2]
+
 <div>
 	<!-- d3 dependencies for d3-force -->
 	<script src="lib/d3.js"></script>
+
+  <!-- CSS. No idea whether this will work in github.io but let's find out. -->
+  <link rel="stylesheet" type="text/css" href="css/default.css">
 
 	<!-- show what we've loaded -->
 	<h2 id="fg-title"></h2>
@@ -36,7 +41,7 @@ than him_
 	<!-- interactivity -->
 	<form onsubmit="return userSubmits();">
 	<input id="userInput" type="text" oninput="userTypes()" size="40"
-		placeholder="Start typing to get autocomplete suggestions below"></input>
+		placeholder="Start typing to get autocomplete suggestions below" />
 	<button type="submit">Load</button>
 	<p style="font-weight: bold;">Completions (live) (clickable):</p>
 	<p id="suggestions"></p>
