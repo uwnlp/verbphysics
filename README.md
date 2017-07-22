@@ -82,7 +82,7 @@ When predicting object pairs, only 5% object pair data should be used. Either 5%
 (our model A) or 20% action frame data (our model B) may be used to assist in
 object pair prediction.
 
-### Code naming conventions
+### Attribute names in code
 
 For legacy reasons, the code has different names for some attributes. The actual
 data (i.e., the questions asked to Mechanical Turk workers) use the attributes
