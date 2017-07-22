@@ -72,7 +72,7 @@ configuration and run the custom model using `--config=playing`.
 
 The `verbphysics` data is found under `data/verbphysics/`.
 
-**Task setup as in the ACL 2017 paper**
+### Task setup as in the ACL 2017 paper
 
 When predicting action frames, only 5% action frame data should be used. Either
 5% (our model A) or 20% object pair data (our model B) may be used to assist in
@@ -81,6 +81,20 @@ action frame prediction.
 When predicting object pairs, only 5% object pair data should be used. Either 5%
 (our model A) or 20% action frame data (our model B) may be used to assist in
 object pair prediction.
+
+### Code naming conventions
+
+For legacy reasons, the code has different names for some attributes. The actual
+data (i.e., the questions asked to Mechanical Turk workers) use the attributes
+reported in the paper.
+
+attribute   | name in code
+---         | ---
+`size`      | `size`
+`weight`    | `weight`
+`strength`  | `hardness`
+`rigidness` | `rigidness`
+`speed`     | `verb-speed`
 
 ## Visualization
 

@@ -20,7 +20,8 @@ than him_
 
 # Demo
 
-[v2]
+Explore an interactive visualization of our factor graph model on the Verb
+Physics dataset. Type below to select an action frame to visualize.
 
 <div>
 	<!-- d3 dependencies for d3-force -->
@@ -40,6 +41,8 @@ than him_
 
 	<!-- interactivity -->
 	<form onsubmit="return userSubmits();">
+  <p>All action frames names start with one of the five attributes: "size,"
+  "weight," "strength," "rigidness," and "speed." </p>
 	<input id="userInput" type="text" oninput="userTypes()" size="40"
 		placeholder="Start typing to get autocomplete suggestions below" />
 	<button type="submit">Load</button>
@@ -47,6 +50,54 @@ than him_
 	<p id="suggestions"></p>
 	</form>
 </div>
+
+## Explanation
+
+The interactive diagram draws a small piece of the factor graph that is focused
+on the selected action frame. The colors correspond to the model's decisions
+about each random variable. <b style="color: red">Red</b> indicates a decision
+that a random variable should take the value `>`, <b style="color:
+blue">blue</b> represents `<`, and <b style="color: grey">grey</b> represents
+`=`. (Grey is uncommon).
+
+These decisions have different meanings depending on what the random variable
+represents. There are two different types of random variables:
+
+1.  **Object pairs** - If a random variable represents two objects—for example,
+    `person_vs_house`—then the decision for that random variable represents the
+    model's choice about the relation of those two objects along the given
+    attribute. For example, if we are looking at an action frame for `size`,
+    then we would expect `person_vs_house` to take the value `<`, because people
+    are generally smaller than houses.
+
+2.  **Action frames** — If a random variable represents an action frame—for
+    example, `threw_d`—then the decisions for that random variable represents
+    the model's choice about the relation of two objects that would fit in that
+    action frame. For example, if we are looking at an action frame for `size`,
+    then we would expect `threw_d` (which encodes `<person> threw <object>`; see
+    below for more details) to take the value `>`, because people are generally
+    larger in size than the objects that they throw.
+
+## Action frame names
+
+The format for the action frame names is:
+
+```
+<attribute>-<verb>_<construction>[_<preposition>]
+```
+
+The possible attributes are: `size`, `weight`, `strength`, `rigidness`, `speed`.
+
+There are five possible action frame constructions. Each corresponds to a
+syntactic template.
+
+Construction   | Syntax template                                      | Example         | Example sentence
+---            | ---                                                  | ---             | ---
+**`d`**        |  `<person> <verb> <object>`                          | `threw_d`       | "I threw the rock."
+**`od`**       |  `<object1> <verb> <object2>`                        | `hit_od`        | "The tape hit the ground."
+**`p`**        |  `<person> <verb> <preposition> <object>`            | `threw_p_out`   | "I threw out the trash."
+**`op`**       |  `<object1> <verb> <preposition> <object2>`          | `landed_op_in`  | "The trash landed in the bin."
+**`dp`**       |  `<person> <verb> <object1> <preposition> <object1>` | `threw_dp_into` | "I threw the trash into the bin."
 
 # Abstract
 

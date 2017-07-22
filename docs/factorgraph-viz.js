@@ -294,6 +294,7 @@ function prepreload(config) {
  */
 function preload(factorgraphFns) {
     cacheFactorgraphFns = factorgraphFns;
+    load('data/examples/size-threw_d.json');
 }
 /**
  * Helper to clear all children of a DOM node.
@@ -325,7 +326,7 @@ function load(fn) {
  */
 function maybeLoad(name) {
     if (cacheFactorgraphFns.indexOf(name) != -1) {
-        document.getElementById(FG_NAME_ELEMENT_ID).innerText = name;
+        document.getElementById(FG_NAME_ELEMENT_ID).innerText = "Action frame: " + name;
         load(cacheConfig.data_dir + name + '.json');
     }
 }
