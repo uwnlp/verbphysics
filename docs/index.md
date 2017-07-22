@@ -20,7 +20,28 @@ than him_
 
 # Demo
 
-Coming soon — Max, 7/13/17
+<div>
+	<!-- d3 dependencies for d3-force -->
+	<script src="lib/d3.js"></script>
+
+	<!-- show what we've loaded -->
+	<h2 id="fg-title"></h2>
+
+	<!-- stick an svg element in here for the factor graph visualizer to use -->
+	<svg id="fg-svg" width="800" height="600"></svg>
+
+	<!-- the factor graph visualizer. it will load a factor graph from disk. -->
+	<script src="factorgraph-viz.js"></script>
+
+	<!-- interactivity -->
+	<form onsubmit="return userSubmits();">
+	<input id="userInput" type="text" oninput="userTypes()" size="40"
+		placeholder="Start typing to get autocomplete suggestions below"></input>
+	<button type="submit">Load</button>
+	<p style="font-weight: bold;">Completions (live) (clickable):</p>
+	<p id="suggestions"></p>
+	</form>
+</div>
 
 # Abstract
 
