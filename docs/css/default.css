@@ -21,7 +21,7 @@
 	font-size: 0.7em;
 }
 
-button.suggestion {	
+button.suggestion {
 	background-color: lightgray;
 	margin: 5px;
 	padding: 5px;
@@ -32,4 +32,8 @@ button.suggestion {
 button.suggestion:hover {
 	background-color: lightslategray;
 	cursor: pointer;
+}
+
+svg {
+	border: 1px solid #159957;
 }
