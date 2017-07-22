@@ -1,0 +1,34 @@
+{
+    "data_dir": "data/examples/",
+    "data_filenames": "data/options/example-list.json",
+    "size": {
+        "rv": 8,
+        "factor": 8
+    },
+    "position": {
+        "leftScale": 0.0,
+        "leftSubtype": "frame",
+        "leftStrength": 0.7,
+        "centerScale": 0.33,
+        "rightScale": 0.84,
+        "rightSubtype": "noun",
+        "rightStrength": 0.7,
+        "upScale": 0.0,
+        "upSubtype": "seed",
+        "upStrength": 0.7,
+        "downScale": 1.0,
+        "downSubtype": "xfactor",
+        "downStrength": 0.7,
+        "middleStrength": 0.1
+    },
+    "color": {
+        "none": "whitesmoke",
+        "unsureColor": "lightslategray",
+        "unsureCutoff": 0.4,
+        "values": [
+            "tomato",
+            "royalblue",
+            "lightslategray"
+        ]
+    }
+}
