@@ -21,9 +21,8 @@ than him_
 # Demo
 
 Explore an interactive visualization of our factor graph model on the Verb
-Physics dataset. Click and drag on components of the factor graph to move them around.
-
-_(Work in progress. Only `size-threw_d` currently available.)_
+Physics dataset. Click and drag on components of the factor graph to move them
+around.
 
 <div>
 	<!-- d3 dependencies for d3-force -->
