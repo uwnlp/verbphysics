@@ -276,6 +276,8 @@ let FG_NAME_ELEMENT_ID = 'fg-title';
 let SVG_ELEMENT_ID = 'fg-svg';
 let USER_INPUT_ID = 'userInput';
 let SUGGESTIONS_ELEMENT_ID = 'suggestions';
+let SUGGESTION_NOTICE_ELEMENT_ID = 'suggestionNotice';
+let AUTOCOMPLETE_LIMIT_DEFAULT = 50;
 let CONFIG_FILE = 'data/config/default.json';
 // Globals (sorry).
 let cacheConfig;
@@ -294,7 +296,7 @@ function prepreload(config) {
  */
 function preload(factorgraphFns) {
     cacheFactorgraphFns = factorgraphFns;
-    load('data/examples/size-threw_d.json');
+    maybeLoad(cacheConfig.startup_filename);
 }
 /**
  * Helper to clear all children of a DOM node.
@@ -326,7 +328,8 @@ function load(fn) {
  */
 function maybeLoad(name) {
     if (cacheFactorgraphFns.indexOf(name) != -1) {
-        document.getElementById(FG_NAME_ELEMENT_ID).innerText = "Action frame: " + name;
+        let prefix = cacheConfig.display_prefix || '';
+        document.getElementById(FG_NAME_ELEMENT_ID).innerText = prefix + name;
         load(cacheConfig.data_dir + name + '.json');
     }
 }
@@ -343,12 +346,24 @@ function userTypes() {
     // Clear any existing suggestions.
     let sug = document.getElementById(SUGGESTIONS_ELEMENT_ID);
     clearChildren(sug);
+    // Display suggestions notice only if we have at least 1 suggestion.
+    let sugNotice = document.getElementById(SUGGESTION_NOTICE_ELEMENT_ID);
+    sugNotice.style.visibility = opts.length > 0 ? 'visible' : 'hidden';
     // Add suggestions.
-    for (let opt of opts) {
+    let autocomplete_limit = cacheConfig.autocomplete_limit || AUTOCOMPLETE_LIMIT_DEFAULT;
+    for (let opt of opts.slice(0, autocomplete_limit)) {
         let el = document.createElement('button');
         el.className = 'suggestion';
         el.innerText = opt;
         el.setAttribute('onclick', 'maybeLoad("' + opt + '");');
+        sug.appendChild(el);
+    }
+    // Display note if they were truncated.
+    if (opts.length > autocomplete_limit) {
+        let el = document.createElement('p');
+        el.className = 'limited';
+        el.innerText = '(only first ' + autocomplete_limit + ' of ' +
+            opts.length + ' shown)';
         sug.appendChild(el);
     }
 }
