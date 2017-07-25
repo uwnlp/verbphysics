@@ -45,10 +45,10 @@ around.
   <p>Type below to select an action frame to visualize.
   All action frames names start with one of the five attributes: "size,"
   "weight," "strength," "rigidness," or "speed." </p>
-	<input id="userInput" type="text" oninput="userTypes()" size="40"
+	<input id="userInput" type="text" oninput="userTypes()" size="50"
 		placeholder="Start typing to get autocomplete suggestions below" />
 	<button type="submit">Load</button>
-	<p style="font-weight: bold;">Completions (live) (clickable):</p>
+	<p id="suggestionNotice">Completions (live) (clickable):</p>
 	<p id="suggestions"></p>
 	</form>
 </div>
