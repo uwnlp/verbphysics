@@ -48,9 +48,9 @@ around.
 	<input id="userInput" type="text" oninput="userTypes()" size="50"
 		placeholder="Start typing to get autocomplete suggestions below" />
 	<button type="submit">Load</button>
+	</form>
 	<p id="suggestionNotice">Completions (live) (clickable):</p>
 	<p id="suggestions"></p>
-	</form>
 </div>
 
 ## Explanation
