@@ -11,7 +11,7 @@
 # Get and extract ngramdb (cached query and pmi) data
 mkdir data/ngramdb/
 cd data/ngramdb/
-curl https://homes.cs.washington.edu/~mbforbes/verbphysics/ngramdb-cache.tar.gz > ngramdb-cache.tar.gz
+curl https://storage.googleapis.com/ai2-mosaic-public/projects/verb-physics/ngramdb-cache.tar.gz > ngramdb-cache.tar.gz
 tar -xzf ngramdb-cache.tar.gz
 rm ngramdb-cache.tar.gz
 cd ../..
@@ -32,7 +32,7 @@ cd ../..
 # Get embedding-trained unary factor weights
 mkdir data/emb/
 cd data/emb/
-curl https://homes.cs.washington.edu/~mbforbes/verbphysics/emb-trained-weights.tar.gz > emb-trained-weights.tar.gz
+curl https://storage.googleapis.com/ai2-mosaic-public/projects/verb-physics/emb-trained-weights.tar.gz > emb-trained-weights.tar.gz
 tar -xzf emb-trained-weights.tar.gz
 rm emb-trained-weights.tar.gz
 cd ../..
